@@ -41,7 +41,7 @@ black_list = []
 # 由于下载太过频繁而无法下载的视频
 redownload_list = []
 
-check_txt = plb.Path("test_remain.txt")  # 这里写输入
+check_txt = plb.Path("valid_remain.txt")  # 这里写输入
 # check_txt = plb.Path("redownload.txt")  # 这里写输入
 with open(check_txt) as f:
     data = f.read().split("\n")[:-1]
@@ -49,7 +49,7 @@ with open(check_txt) as f:
 
 pool = ThreadPoolExecutor(max_workers=6)
 results = []
-for item in data[100:150]:
+for item in data[0:100]:
 # for item in data:
     vid = item[:11]
     if vid in old_black_list:
