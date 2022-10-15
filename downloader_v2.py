@@ -15,7 +15,9 @@ def init_database(anno_list: list):
     cursor = conn.cursor()
     # 新建表
     cursor.execute(
-        "CREATE TABLE vatex (vid varchar(25) primary key, status varchar(20), split varchar(10), details varchar(100))"
+        "CREATE TABLE vatex (vid varchar(25) primary key,"
+        " status varchar(20), split varchar(10),"
+        " details varchar(100), asr integer)"
     )
     # 读取vatex数据集
     for anno in anno_list:
@@ -224,3 +226,4 @@ if __name__ == '__main__':
             last_time = time.time()
 
 
+# YouTubeTranscriptApi.get_transcript("W2OKlTf7rPA", proxies={"https": "socks5://localhost:7890", "http": "socks5://localhost:7890"})
