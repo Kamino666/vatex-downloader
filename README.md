@@ -20,8 +20,8 @@ Features:
 
 ## Quick Start
 
-1. Install`sqlite3`：`pip install sqlite3`
-2. Install[yt-dlp](https://github.com/yt-dlp/yt-dlp): `pip install yt-dlp`
+1. Install `sqlite3`：`pip install sqlite3`
+2. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp): `pip install yt-dlp`
 3. Modify the parameters in `downloader_v2.py` 
    1. Global variable `DATABASE` is the file path of sqlilte database
    2. Global variable `video_dir` is the download directory
@@ -29,6 +29,7 @@ Features:
    4. Global variable `proxy` is the proxy address
 4. Run `downloader_v2.py`
 
+## 快速开始
 
 1. 安装`sqlite3`：`pip install sqlite3`
 2. 安装[yt-dlp](https://github.com/yt-dlp/yt-dlp): `pip install yt-dlp`
