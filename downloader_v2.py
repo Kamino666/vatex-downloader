@@ -190,6 +190,7 @@ if __name__ == '__main__':
     dl_queue = Queue(maxsize=1000)
     video_dir = "videos"
     num_workers = 4
+    proxy = "http://localhost:7890"
 
     # 生产者
     producer = ProducerWorker(dl_queue)
@@ -202,6 +203,7 @@ if __name__ == '__main__':
             dl_queue=dl_queue,
             info_lock=lock,
             tgt_dir=video_dir,
+            proxy=proxy
         )
         w.daemon = True
         w.start()
