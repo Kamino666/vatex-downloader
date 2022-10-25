@@ -4,6 +4,7 @@ from tqdm import tqdm
 
 
 """
+压缩分辨率
 ffmpeg -i input.mp4 -vf scale=320:240 -y output.mp4
 """
 OUTPUT_DIR = Path("validation_low_res")

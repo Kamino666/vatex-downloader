@@ -226,4 +226,3 @@ if __name__ == '__main__':
             last_time = time.time()
 
 
-# YouTubeTranscriptApi.get_transcript("W2OKlTf7rPA", proxies={"https": "socks5://localhost:7890", "http": "socks5://localhost:7890"})
